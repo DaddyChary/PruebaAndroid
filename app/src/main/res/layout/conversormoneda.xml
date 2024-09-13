@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context=".ConversorDeMoneda">
+
+    <!-- Título de la actividad -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversor de Moneda"
+        android:textSize="24sp"
+        android:textColor="#FFEB3B"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Campo para la cantidad en pesos chilenos -->
+    <EditText
+        android:id="@+id/editTextCantidad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Monto en CLP"
+        android:inputType="numberDecimal"
+        android:backgroundTint="#FFFFFF"
+        android:textColorHint="#ffff"
+        android:textColor="#ffff"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"/>
+
+    <!-- GridLayout para los botones de conversión -->
+    <GridLayout
+        android:id="@+id/gridLayoutConversion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextCantidad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Botones para convertir -->
+        <Button
+            android:id="@+id/buttonUSD"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="USD"
+            android:layout_margin="4dp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/buttonEUR"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="EUR"
+            android:layout_margin="4dp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/buttonGBP"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="GBP"
+            android:layout_margin="4dp"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/buttonJPY"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="JPY"
+            android:layout_margin="4dp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/buttonCNY"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="CNY"
+            android:layout_margin="4dp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/buttonMXN"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="MXN"
+            android:layout_margin="4dp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/buttonBRL"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="BRL"
+            android:layout_margin="4dp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/buttonCAD"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="CAD"
+            android:layout_margin="4dp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/buttonAUD"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="AUD"
+            android:layout_margin="4dp"
+            android:padding="8dp" />
+    </GridLayout>
+
+    <!-- Resultado de la conversión -->
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado: "
+        android:textSize="20sp"
+        android:textColor="#FFEB3B"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/gridLayoutConversion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botón para volver -->
+    <Button
+        android:id="@+id/buttonVolverIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#F44336"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="12dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
