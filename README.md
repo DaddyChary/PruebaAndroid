@@ -1,5 +1,9 @@
 # De que se trata?
 
+Desarrollador: Gamaliel Moya
+
++ 1.1 decimas =)
+
 El proyecto es una aplicación Android para conversión de moneda y cálculo del Índice de Masa Corporal (IMC). Aquí está una descripción detallada del proyecto:
 
 1. Calculadora del IMC
